@@ -1,4 +1,4 @@
-from setuptools import setu
+from setuptools import setup
 setup(
     name='robustmatting',
     version='0.1.0',
