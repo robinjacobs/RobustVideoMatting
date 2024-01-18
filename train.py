@@ -94,27 +94,27 @@ from torchvision.utils import make_grid
 from torchvision.transforms.functional import center_crop
 from tqdm import tqdm
 
-from dataset.videomatte import (
+from robustmatting.dataset.videomatte import (
     VideoMatteDataset,
     VideoMatteTrainAugmentation,
     VideoMatteValidAugmentation,
 )
-from dataset.imagematte import (
+from robustmatting.dataset.imagematte import (
     ImageMatteDataset,
     ImageMatteAugmentation
 )
-from dataset.coco import (
+from robustmatting.dataset.coco import (
     CocoPanopticDataset,
     CocoPanopticTrainAugmentation,
 )
-from dataset.spd import (
+from robustmatting.dataset.spd import (
     SuperviselyPersonDataset
 )
-from dataset.youtubevis import (
+from robustmatting.dataset.youtubevis import (
     YouTubeVISDataset,
     YouTubeVISAugmentation
 )
-from dataset.augmentation import (
+from robustmatting.dataset.augmentation import (
     TrainFrameSampler,
     ValidFrameSampler
 )
