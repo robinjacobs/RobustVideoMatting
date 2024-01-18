@@ -10,7 +10,7 @@ import argparse
 import torch
 from tqdm import tqdm
 
-from model.model import MattingNetwork
+from robustmatting.model import MattingNetwork
 
 torch.backends.cudnn.benchmark = True
 

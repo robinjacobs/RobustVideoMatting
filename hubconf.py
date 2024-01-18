@@ -32,7 +32,7 @@ def resnet50(pretrained: bool = True, progress: bool = True):
 
 def converter():
     try:
-        from inference import convert_video
+        from robustmatting.inference import convert_video
         return convert_video
     except ModuleNotFoundError as error:
         print(error)

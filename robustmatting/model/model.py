@@ -1,15 +1,14 @@
-import torch
 from torch import Tensor
 from torch import nn
 from torch.nn import functional as F
-from typing import Optional, List
+from typing import Optional
 
 from .mobilenetv3 import MobileNetV3LargeEncoder
 from .resnet import ResNet50Encoder
 from .lraspp import LRASPP
-from .decoder import RecurrentDecoder, Projection
-from .fast_guided_filter import FastGuidedFilterRefiner
-from .deep_guided_filter import DeepGuidedFilterRefiner
+from robustmatting.model.decoder import RecurrentDecoder, Projection
+from robustmatting.model.fast_guided_filter import FastGuidedFilterRefiner
+from robustmatting.model.deep_guided_filter import DeepGuidedFilterRefiner
 
 class MattingNetwork(nn.Module):
     def __init__(self,
